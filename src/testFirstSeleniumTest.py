@@ -36,6 +36,7 @@ class FirstTest(unittest.TestCase):
         
             # You should see "cheese! - Google Search"
             print driver.title
+            self.assertEquals(driver.title.index("cheese"), 0, "The expected page was not found!")
         
         finally:
             driver.quit()
