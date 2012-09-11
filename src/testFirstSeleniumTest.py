@@ -39,3 +39,6 @@ class FirstTest(unittest.TestCase):
         
         finally:
             driver.quit()
+            
+#if __name__ == "__main__":
+#    unittest.main()
