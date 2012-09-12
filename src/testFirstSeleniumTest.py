@@ -16,6 +16,8 @@ class FirstTest(unittest.TestCase):
         browserProfile = None
         driver = WebDriver(seleniumHub, desiredCapabilities, browserProfile)
         
+        print "Running test on hub: %s" %seleniumHub
+        
         # go to the google home page
         driver.get("http://www.google.com")
     
