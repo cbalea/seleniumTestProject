@@ -3,17 +3,17 @@ Created on 11.09.2012
 
 @author: cbalea
 '''
-from selenium import webdriver
-from selenium.common.exceptions import TimeoutException
+from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.support.ui import WebDriverWait # available since 2.4.0
-import time
 import unittest
 
 class FirstTest(unittest.TestCase):
     
     def test_googlePage(self):
         # Create a new instance of the Firefox driver
-        driver = webdriver.Firefox()
+        seleniumHub = 'http://localhost:4444/wd/hub'
+        desiredCapabilities = {"browserName":"firefox"}
+        driver = WebDriver(seleniumHub, desiredCapabilities, None)
         
         # go to the google home page
         driver.get("http://www.google.com")
@@ -40,6 +40,3 @@ class FirstTest(unittest.TestCase):
         
         finally:
             driver.quit()
-            
-#if __name__ == "__main__":
-#    unittest.main()
