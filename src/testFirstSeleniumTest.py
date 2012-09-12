@@ -10,10 +10,11 @@ import unittest
 class FirstTest(unittest.TestCase):
     
     def test_googlePage(self):
-        # Create a new instance of the Firefox driver
-        seleniumHub = 'http://localhost:4444/wd/hub'
+#        seleniumHub = 'http://localhost:4444/wd/hub'
+        seleniumHub = 'http://ec2-204-236-220-204.compute-1.amazonaws.com:4445/wd/hub'
         desiredCapabilities = {"browserName":"firefox"}
-        driver = WebDriver(seleniumHub, desiredCapabilities, None)
+        browserProfile = None
+        driver = WebDriver(seleniumHub, desiredCapabilities, browserProfile)
         
         # go to the google home page
         driver.get("http://www.google.com")
