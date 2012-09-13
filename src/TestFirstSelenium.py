@@ -44,17 +44,17 @@ class TestFirstSelenium(unittest.TestCase):
         finally:
             driver.quit()
     
-#    def test_1(self):
-#        self.googlePage()
-#    
-#    def test_2(self):
-#        self.googlePage()
-#        
-#    def test_3(self):
-#        self.googlePage()
+    def test_1(self):
+        self.googlePage()
     
-#    def test_4(self):
-#        self.googlePage()
+    def test_2(self):
+        self.googlePage()
+        
+    def test_3(self):
+        self.googlePage()
+    
+    def test_4(self):
+        self.googlePage()
     
     def test_6(self):
         seleniumHub = 'http://ec2-204-236-220-204.compute-1.amazonaws.com:4445/wd/hub'
@@ -91,5 +91,5 @@ class TestFirstSelenium(unittest.TestCase):
         finally:
             driver.quit()
     
-#    def test_5(self):
-#        self.googlePage()
+    def test_5(self):
+        self.googlePage()
