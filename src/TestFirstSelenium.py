@@ -7,7 +7,7 @@ from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.support.ui import WebDriverWait # available since 2.4.0
 import unittest
 
-class FirstTest(unittest.TestCase):
+class TestFirstSelenium(unittest.TestCase):
     
     def googlePage(self):
 #        seleniumHub = 'http://localhost:4444/wd/hub'
