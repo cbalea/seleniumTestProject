@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="1" errors="1" failures="0" skip="0"><testcase classname="TestFirstSelenium.TestFirstSelenium" name="test_6" time="7.325"><error type="exceptions.ValueError" message='substring not found&#10;-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------&#10;Running test on hub: http://localhost:4444/wd/hub&#10;Google&#10;cheese! - Căutare Google&#10;&#10;--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------&#10;-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------&#10;selenium.webdriver.remote.remote_connection: DEBUG: POST http://127.0.0.1:4444/wd/hub/session {"sessionId": null, "desiredCapabilities": {"browserName": "firefox"}}&#10;selenium.webdriver.remote.remote_connection: DEBUG: POST http://127.0.0.1:4444/wd/hub/session/1347529767496/url {"url": "http://www.google.com", "sessionId": "1347529767496"}&#10;selenium.webdriver.remote.remote_connection: DEBUG: POST http://127.0.0.1:4444/wd/hub/session/1347529767496/element {"using": "name", "sessionId": "1347529767496", "value": "q"}&#10;selenium.webdriver.remote.remote_connection: DEBUG: POST http://127.0.0.1:4444/wd/hub/session/1347529767496/element/0/value {"sessionId": "1347529767496", "id": "0", "value": ["C", "h", "e", "e", "s", "e", "!"]}&#10;selenium.webdriver.remote.remote_connection: DEBUG: POST http://127.0.0.1:4444/wd/hub/session/1347529767496/element/0/submit {"sessionId": "1347529767496", "id": "0"}&#10;selenium.webdriver.remote.remote_connection: DEBUG: GET http://127.0.0.1:4444/wd/hub/session/1347529767496/title {"sessionId": "1347529767496"}&#10;selenium.webdriver.remote.remote_connection: DEBUG: GET http://127.0.0.1:4444/wd/hub/session/1347529767496/title {"sessionId": "1347529767496"}&#10;selenium.webdriver.remote.remote_connection: DEBUG: GET http://127.0.0.1:4444/wd/hub/session/1347529767496/title {"sessionId": "1347529767496"}&#10;selenium.webdriver.remote.remote_connection: DEBUG: GET http://127.0.0.1:4444/wd/hub/session/1347529767496/title {"sessionId": "1347529767496"}&#10;selenium.webdriver.remote.remote_connection: DEBUG: GET http://127.0.0.1:4444/wd/hub/session/1347529767496/title {"sessionId": "1347529767496"}&#10;selenium.webdriver.remote.remote_connection: DEBUG: DELETE http://127.0.0.1:4444/wd/hub/session/1347529767496 {"sessionId": "1347529767496"}&#10;--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------'><![CDATA[Traceback (most recent call last):
+  File "c:\Python27\lib\unittest\case.py", line 327, in run
+    testMethod()
+  File "C:\seleniumRepositoryTest\seleniumTestProject\src\TestFirstSelenium.py", line 89, in test_6
+    self.assertEquals(driver.title.index("aaa"), 0, "The expected page was not found!")
+ValueError: substring not found
+-------------------- >> begin captured stdout << ---------------------
+Running test on hub: http://localhost:4444/wd/hub
+Google
+cheese! - Căutare Google
+
+--------------------- >> end captured stdout << ----------------------
+-------------------- >> begin captured logging << --------------------
+selenium.webdriver.remote.remote_connection: DEBUG: POST http://127.0.0.1:4444/wd/hub/session {"sessionId": null, "desiredCapabilities": {"browserName": "firefox"}}
+selenium.webdriver.remote.remote_connection: DEBUG: POST http://127.0.0.1:4444/wd/hub/session/1347529767496/url {"url": "http://www.google.com", "sessionId": "1347529767496"}
+selenium.webdriver.remote.remote_connection: DEBUG: POST http://127.0.0.1:4444/wd/hub/session/1347529767496/element {"using": "name", "sessionId": "1347529767496", "value": "q"}
+selenium.webdriver.remote.remote_connection: DEBUG: POST http://127.0.0.1:4444/wd/hub/session/1347529767496/element/0/value {"sessionId": "1347529767496", "id": "0", "value": ["C", "h", "e", "e", "s", "e", "!"]}
+selenium.webdriver.remote.remote_connection: DEBUG: POST http://127.0.0.1:4444/wd/hub/session/1347529767496/element/0/submit {"sessionId": "1347529767496", "id": "0"}
+selenium.webdriver.remote.remote_connection: DEBUG: GET http://127.0.0.1:4444/wd/hub/session/1347529767496/title {"sessionId": "1347529767496"}
+selenium.webdriver.remote.remote_connection: DEBUG: GET http://127.0.0.1:4444/wd/hub/session/1347529767496/title {"sessionId": "1347529767496"}
+selenium.webdriver.remote.remote_connection: DEBUG: GET http://127.0.0.1:4444/wd/hub/session/1347529767496/title {"sessionId": "1347529767496"}
+selenium.webdriver.remote.remote_connection: DEBUG: GET http://127.0.0.1:4444/wd/hub/session/1347529767496/title {"sessionId": "1347529767496"}
+selenium.webdriver.remote.remote_connection: DEBUG: GET http://127.0.0.1:4444/wd/hub/session/1347529767496/title {"sessionId": "1347529767496"}
+selenium.webdriver.remote.remote_connection: DEBUG: DELETE http://127.0.0.1:4444/wd/hub/session/1347529767496 {"sessionId": "1347529767496"}
+--------------------- >> end captured logging << ---------------------
+]]></error></testcase></testsuite>
