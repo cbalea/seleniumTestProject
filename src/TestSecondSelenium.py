@@ -10,8 +10,8 @@ import unittest
 class TestSecondSelenium(unittest.TestCase):
     
     def googlePage(self):
-#        seleniumHub = 'http://localhost:4444/wd/hub'
-        seleniumHub = 'http://ec2-204-236-220-204.compute-1.amazonaws.com:4445/wd/hub'
+        seleniumHub = 'http://localhost:4444/wd/hub'
+#        seleniumHub = 'http://ec2-204-236-220-204.compute-1.amazonaws.com:4445/wd/hub'
         desiredCapabilities = {"browserName":"firefox"}
         browserProfile = None
         driver = WebDriver(seleniumHub, desiredCapabilities, browserProfile)
@@ -51,8 +51,8 @@ class TestSecondSelenium(unittest.TestCase):
         self.googlePage()
     
     def test_5(self):
-        seleniumHub = 'http://ec2-204-236-220-204.compute-1.amazonaws.com:4445/wd/hub'
-#        seleniumHub = 'http://localhost:4444/wd/hub'
+#        seleniumHub = 'http://ec2-204-236-220-204.compute-1.amazonaws.com:4445/wd/hub'
+        seleniumHub = 'http://localhost:4444/wd/hub'
         desiredCapabilities = {"browserName":"firefox"}
         browserProfile = None
         driver = WebDriver(seleniumHub, desiredCapabilities, browserProfile)
