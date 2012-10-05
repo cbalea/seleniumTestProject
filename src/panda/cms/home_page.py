@@ -1,14 +1,11 @@
 '''
-Created on 14.09.2012
+Created on 18.09.2012
 
 @author: cbalea
 '''
-from panda.cms.driver_factory import DriverFactory
 from selenium.webdriver.remote.webelement import WebElement
-import unittest
 
-
-class LoginPage(object):
+class HomePage(object):
     usernameField = WebElement(None, None)
     passwordField = WebElement(None, None)
     usernameId = "id_username"
@@ -32,13 +29,3 @@ class LoginPage(object):
         self.typeUsername(username)
         self.typePassword(password)
         self.submitForm()
-
-        
-
-class TestLoginPage(unittest.TestCase):
-    
-    def test_loginIsCorrect(self):
-        driver = DriverFactory().initializeFirefoxDriver()
-        loginPage = LoginPage(driver)
-        homePage = loginPage.login("admin", "admin")
-        homePage.assertEquals(driver.title, "Site administration | PBS LearningMedia site admin", "Login not correct!")
